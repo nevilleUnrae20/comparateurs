@@ -47,11 +47,32 @@ const competitions = [
         logo: 'la liga.png'
     },
     {
+        id: 'soccer_spain_copa_del_rey',
+        name: 'Copa del Rey',
+        icon: '🇪🇸',
+        displayName: 'Copa del Rey',
+        logo: 'copa del rey logo.png'
+    },
+    {
+        id: 'soccer_germany_dfb_pokal',
+        name: 'DFB Pokal',
+        icon: '🇩🇪',
+        displayName: 'DFB Pokal',
+        logo: 'dfb pokal logo.png'
+    },
+    {
         id: 'soccer_epl',
         name: 'Premier League',
         icon: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
         displayName: 'Premier League',
         logo: 'Premier League.png'
+    },
+    {
+        id: 'soccer_efl_champ',
+        name: 'League One',
+        icon: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+        displayName: 'League One',
+        logo: 'league one.svg'
     },
     {
         id: 'soccer_france_ligue_one',
@@ -75,18 +96,18 @@ const competitions = [
         logo: 'Süper Lig.png'
     },
     {
-        id: 'soccer_france_ligue_two',
-        name: 'Ligue 2',
-        icon: '🇫🇷',
-        displayName: 'Ligue 2',
-        logo: 'ligue 2.png'
-    },
-    {
         id: 'soccer_netherlands_eredivisie',
         name: 'Eredivisie',
         icon: '🇳🇱',
         displayName: 'Eredivisie',
         logo: 'eredeviste.png'
+    },
+    {
+        id: 'soccer_congo_linafoot',
+        name: 'Ligue RDC',
+        icon: '🇨🇩',
+        displayName: 'Ligue RDC (FECOFA)',
+        logo: 'FECOFA logo.png'
     }
 ];
 
