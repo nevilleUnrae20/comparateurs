@@ -606,7 +606,7 @@ function updateMatchOdds(matchId, bookmaker, newOdds, oldOdds = null) {
     }
 }
 
-// Démarrer les mises à jour aléatoires (intelligentes: 10 secondes à 2 minutes)
+// Démarrer les mises à jour aléatoires (intelligentes: 30 secondes à 1 minute 30)
 function startRandomOddsUpdates() {
     const matchRows = document.querySelectorAll('.match-row:not(.past-match)'); // Exclure les matchs passés
     
@@ -616,8 +616,8 @@ function startRandomOddsUpdates() {
         bookmakers.forEach(bookmaker => {
             // Créer des intervalles séparés pour chaque cote individuelle
             ['home', 'away'].forEach(oddType => {
-                // Intervalle: 10 secondes à 2 minutes (10000ms à 120000ms)
-                const randomInterval = Math.random() * 110000 + 10000; // 10 à 120 secondes
+                // Intervalle: 30 secondes à 1 minute 30 (30000ms à 90000ms)
+                const randomInterval = Math.random() * 60000 + 30000; // 30 à 90 secondes
                 
                 setTimeout(() => {
                     updateIndividualOdd(matchId, bookmaker.id, oddType);
@@ -625,7 +625,7 @@ function startRandomOddsUpdates() {
                     // Programmer la prochaine mise à jour pour cette cote spécifique
                     setInterval(() => {
                         updateIndividualOdd(matchId, bookmaker.id, oddType);
-                    }, Math.random() * 110000 + 10000); // 10 à 120 secondes
+                    }, Math.random() * 60000 + 30000); // 30 à 90 secondes
                     
                 }, randomInterval);
             });
