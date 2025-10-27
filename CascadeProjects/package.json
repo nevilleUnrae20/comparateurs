@@ -1,0 +1,23 @@
+{
+  "name": "footcotes-match-fetcher",
+  "version": "1.0.0",
+  "description": "Script pour récupérer les matchs de football depuis The Odds API",
+  "main": "fetch_matches.js",
+  "scripts": {
+    "fetch": "node fetch_matches.js",
+    "start": "node fetch_matches.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.11.1",
+    "node-fetch": "^2.7.0"
+  },
+  "keywords": [
+    "football",
+    "odds",
+    "api",
+    "matches",
+    "sports"
+  ],
+  "author": "FootCotes",
+  "license": "MIT"
+}

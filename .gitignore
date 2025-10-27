@@ -1,0 +1,30 @@
+# Dépendances Node.js
+node_modules/
+package-lock.json
+
+# Clés Firebase sensibles
+kolisa-likabo-firebase-adminsdk-fbsvc-*.json
+firebase-service-account.json
+
+# Données générées
+matches_data.json
+firestore_data.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*.bak
+
+# Environnement
+.env
+.env.local

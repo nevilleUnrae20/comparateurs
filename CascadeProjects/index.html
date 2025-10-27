@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparateur de Cotes Football</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">⚽ FootCotes</h1>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Header unifié -->
+            <div class="unified-header">
+                <div class="header-cell championships">
+                    <div class="championship-select-container">
+                        <!-- La select personnalisée sera créée par JavaScript -->
+                    </div>
+                </div>
+                <div class="header-cell time">Heure (ET)</div>
+                <div class="header-cell match">Match</div>
+                <div class="header-cell">
+                    <img src="winner.bet.jpg" alt="Winner.bet" class="bookmaker-logo">
+                </div>
+                <div class="header-cell">
+                    <img src="1xbet.png" alt="1xBet" class="bookmaker-logo">
+                </div>
+                <div class="header-cell">
+                    <img src="betwinner.png" alt="BetWinner" class="bookmaker-logo">
+                </div>
+            </div>
+
+            <!-- Container avec les matchs -->
+            <div class="matches-container" id="matches-container">
+                <!-- Les matchs seront ajoutés dynamiquement ici -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
