@@ -5,6 +5,7 @@ package-lock.json
 # Clés Firebase sensibles
 kolisa-likabo-firebase-adminsdk-fbsvc-*.json
 firebase-service-account.json
+config.js
 
 # Données générées
 matches_data.json
