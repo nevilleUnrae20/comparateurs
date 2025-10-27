@@ -1,5 +1,17 @@
-// Les configurations Firebase et API sont maintenant dans config.js
-// Assurez-vous que config.js existe (copiez config.example.js)
+// Configuration Firebase (clés publiques - OK pour GitHub Pages)
+const firebaseConfig = {
+    apiKey: "AIzaSyA2UMd9kJEde_Jmcu0gIM4X-jyygtpmST4",
+    authDomain: "kolisa-likabo.firebaseapp.com",
+    projectId: "kolisa-likabo",
+    storageBucket: "kolisa-likabo.firebasestorage.app",
+    messagingSenderId: "247371468055",
+    appId: "1:247371468055:web:0ea8159b8c9a5209a1bb52",
+    measurementId: "G-XH75BBPTXC"
+};
+
+// Configuration The Odds API
+const ODDS_API_KEY = '3afd3012fe40f11c26e867de98086032';
+const ODDS_API_BASE_URL = 'https://api.the-odds-api.com/v4';
 
 // Initialiser Firebase
 firebase.initializeApp(firebaseConfig);
