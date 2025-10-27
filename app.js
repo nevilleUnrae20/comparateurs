@@ -111,17 +111,20 @@ const bookmakers = [
     {
         id: 'winner_bet',
         name: 'Winner.bet',
-        logo: 'winner.bet.jpg'
+        logo: 'winner.bet.jpg',
+        url: 'https://winner.bet'
     },
     {
         id: '1xbet',
         name: '1xBet',
-        logo: '1xbet.png'
+        logo: '1xbet.png',
+        url: 'https://1xbet.cd/'
     },
     {
         id: 'betwinner',
         name: 'BetWinner',
-        logo: 'betwinner.png'
+        logo: 'betwinner.png',
+        url: 'https://betwinner.cd/en'
     }
 ];
 
@@ -416,12 +419,12 @@ function createBookmakerOddsColumns(matchId) {
     return bookmakers.map(bookmaker => `
         <div class="match-cell bookmaker-odds" data-bookmaker="${bookmaker.id}" data-match="${matchId}">
             <div class="odds-pair">
-                <div class="odd-button" data-type="home" data-bookmaker="${bookmaker.id}" data-match="${matchId}">
+                <a href="${bookmaker.url}" target="_blank" rel="noopener noreferrer" class="odd-button" data-type="home" data-bookmaker="${bookmaker.id}" data-match="${matchId}">
                     <span class="odd-value">-</span>
-                </div>
-                <div class="odd-button" data-type="away" data-bookmaker="${bookmaker.id}" data-match="${matchId}">
+                </a>
+                <a href="${bookmaker.url}" target="_blank" rel="noopener noreferrer" class="odd-button" data-type="away" data-bookmaker="${bookmaker.id}" data-match="${matchId}">
                     <span class="odd-value">-</span>
-                </div>
+                </a>
             </div>
         </div>
     `).join('');
